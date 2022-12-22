@@ -1,0 +1,248 @@
+{
+	"info": {
+		"_postman_id": "3970fbaf-2a21-4e0f-aefd-4c1239465534",
+		"name": "halosis-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10026548"
+	},
+	"item": [
+		{
+			"name": "halosis-test.test/api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "halo@halosis.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "halosis-test.test/api/login",
+					"host": [
+						"halosis-test",
+						"test"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "halosis-test.test/api/carts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vaGFsb3Npcy10ZXN0LnRlc3QvYXBpL2xvZ2luIiwiaWF0IjoxNjcxNjEwODk4LCJleHAiOjE2NzE2MTQ0OTgsIm5iZiI6MTY3MTYxMDg5OCwianRpIjoiU0NPM2xBbUNralFqdXlHVyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Vr43HOZaaui9ptDWNAcC0kty12fmn4apMrczKZiyIcQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "qty",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "halosis-test.test/api/carts",
+					"host": [
+						"halosis-test",
+						"test"
+					],
+					"path": [
+						"api",
+						"carts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "halosis-test.test/api/checkout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vaGFsb3Npcy10ZXN0LnRlc3QvYXBpL2xvZ2luIiwiaWF0IjoxNjcxNjEwODk4LCJleHAiOjE2NzE2MTQ0OTgsIm5iZiI6MTY3MTYxMDg5OCwianRpIjoiU0NPM2xBbUNralFqdXlHVyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Vr43HOZaaui9ptDWNAcC0kty12fmn4apMrczKZiyIcQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "9869869789",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "jalan jalan jalan",
+							"type": "text"
+						},
+						{
+							"key": "grand_total",
+							"value": "10000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "halosis-test.test/api/checkout",
+					"host": [
+						"halosis-test",
+						"test"
+					],
+					"path": [
+						"api",
+						"checkout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "halosis-test.test/api/checkout Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vaGFsb3Npcy10ZXN0LnRlc3QvYXBpL2xvZ2luIiwiaWF0IjoxNjcxNjEwODk4LCJleHAiOjE2NzE2MTQ0OTgsIm5iZiI6MTY3MTYxMDg5OCwianRpIjoiU0NPM2xBbUNralFqdXlHVyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Vr43HOZaaui9ptDWNAcC0kty12fmn4apMrczKZiyIcQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "9869869789",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "jalan jalan jalan",
+							"type": "text"
+						},
+						{
+							"key": "grand_total",
+							"value": "10000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "halosis-test.test/api/orders",
+					"host": [
+						"halosis-test",
+						"test"
+					],
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "halosis-test.test/api/checkout Copy 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vaGFsb3Npcy10ZXN0LnRlc3QvYXBpL2xvZ2luIiwiaWF0IjoxNjcxNjEwODk4LCJleHAiOjE2NzE2MTQ0OTgsIm5iZiI6MTY3MTYxMDg5OCwianRpIjoiU0NPM2xBbUNralFqdXlHVyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Vr43HOZaaui9ptDWNAcC0kty12fmn4apMrczKZiyIcQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "9869869789",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "jalan jalan jalan",
+							"type": "text"
+						},
+						{
+							"key": "grand_total",
+							"value": "10000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "halosis-test.test/api/order/2",
+					"host": [
+						"halosis-test",
+						"test"
+					],
+					"path": [
+						"api",
+						"order",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
